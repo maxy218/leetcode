@@ -31,19 +31,19 @@ struct TreeNode {
 };
 
 class Solution {
-	bool r_isTreeIdentity(TreeNode *rt1, TreeNode *rt2){
-		// rt1 & rt2 will not be NULL
-		if(rt1 == NULL && rt2 == NULL) return true;
-		if(rt1 == NULL || rt2 == NULL) return false;
-		if(rt1 -> val != rt2 -> val) return false;
-		return r_isTreeIdentity(rt1 -> left, rt2 -> right) && r_isTreeIdentity(rt1 -> right, rt2 -> left);
-	}
+  bool r_isTreeIdentity(TreeNode *rt1, TreeNode *rt2){
+    // rt1 & rt2 will not be NULL
+    if(rt1 == NULL && rt2 == NULL) return true;
+    if(rt1 == NULL || rt2 == NULL) return false;
+    if(rt1 -> val != rt2 -> val) return false;
+    return r_isTreeIdentity(rt1 -> left, rt2 -> right) && r_isTreeIdentity(rt1 -> right, rt2 -> left);
+  }
 public:
     bool isSymmetric(TreeNode *root) {
         // Start typing your C/C++ solution below
         // DO NOT write int main() function
-		if(root == NULL) return true;
-		return r_isTreeIdentity(root -> left, root -> right);
+	  if(root == NULL) return true;
+	  return r_isTreeIdentity(root -> left, root -> right);
     }
 };
 
