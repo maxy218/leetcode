@@ -3,10 +3,17 @@
  *
  *       Filename:  main.cpp
  *
+<<<<<<< HEAD
  *    Description:  
  *
  *        Version:  1.0
  *        Created:  2013年10月07日 07时23分51秒
+=======
+ *    Description:  Best Time to Buy and Sell Stock III
+ *
+ *        Version:  1.0
+ *        Created:  10/07/2013 01:08:53 PM
+>>>>>>> d76088d662aec4ef1c8667afd00e10a76aa85639
  *       Revision:  none
  *       Compiler:  gcc
  *
